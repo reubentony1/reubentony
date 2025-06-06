@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tribute to Nelson Mandela</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #1abc9c, #16a085);
+      background-size: 200% 200%;
+      animation: waveBackground 10s ease-in-out infinite;
+      color: #333;
+    }
+
+    @keyframes waveBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1f5e86;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: cyan;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: whitesmoke;
+      font-style: bold;
+      font-size: xx-large;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2c3e50;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 4px solid #3498db;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .hover-text:hover {
+      color: red;
+    }
+
+    .expand-word {
+      display: inline-block;
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .expand-word:hover {
+      transform: scale(1.1);
+      color: darkblue;
+    }
+
+    .cancel-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 8px 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cancel-btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="uppercase"><u>Tribute to Nelson Mandela</u></h1>
+    <p><b>
+      <marquee direction="right" scrollamount="10" behavior="alternate" bgcolor="green">
+        A leader, a legend, and a symbol of hope
+      </marquee>
+    </b></p>
+  </header>
+
+  <div class="button-container">
+    <button onclick="document.querySelector('.container').style.display='block'">My Tribute</button>
+  </div>
+
+  <div class="container">
+    <h2>About Nelson Mandela</h2>
+    <p>
+      Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, political leader,
+      and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's
+      first Black head of state and the first elected in a fully representative democratic election.
+    </p>
+
+    <div class="quote">
+      “Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela
+    </div>
+
+    <h2>Legacy</h2>
+    <ul class="hover-text">
+      <li>Fought against apartheid and racial oppression</li>
+      <li>Spent 27 years in prison for his beliefs</li>
+      <li>Became a global symbol of peace and reconciliation</li>
+      <li>Won the Nobel Peace Prize in 1993</li>
+      <li>Founded the Nelson Mandela Foundation to promote freedom and equality</li>
+    </ul>
+
+    <h2>Why I Admire Him</h2>
+    <p><span class="expand-word">
+      I admire Nelson Mandela for his unshakable courage, moral clarity, and commitment to justice. He forgave those
+      who wronged him and worked tirelessly to unify a divided nation. His humility and strength inspire me
+      to stand up for what is right and never give up, even in the face of great adversity.
+    </span></p>
+
+    <button class="cancel-btn" onclick="document.querySelector('.container').style.display='none'">Cancel</button>
+  </div>
+
+  <footer>
+    Created by REUBEN TONY OMONDI | &copy; 2025 Tribute Project
+  </footer>
+</body>
+</html>
